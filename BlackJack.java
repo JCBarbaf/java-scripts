@@ -1,3 +1,4 @@
+//Program made to calculate and show the winners of a blackjack game
 public class BlackJack {
   public static void main(String[] args) {
     System.out.println("---Round 1---");
