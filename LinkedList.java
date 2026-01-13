@@ -1,9 +1,10 @@
 public class LinkedList {
     public static void main(String[] args) {
-        Node node3 = new Node(45, null);
-        Node node2 = new Node(12, node3);
-        Node node1 = new Node(3, node2);
-        System.out.println(CountNodes(node1));
+        Node linkedList = new Node(3);
+        linkedList.next = new Node(12);
+        linkedList.next.next = new Node(45);
+        linkedList.next.next.next = new Node(486);
+        System.out.println(CountNodes(linkedList));
     }
     public static int CountNodes(Node top) {
         if (top == null) {
